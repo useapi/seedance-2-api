@@ -1,0 +1,7 @@
+{
+  "name": "seedance-2-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Run Seedance 2.0 four ways via useapi.net (PixVerse/Runway/Dreamina/MiniMax) + an honest cross-vendor price dataset and calculator",
+  "license": "MIT"
+}
