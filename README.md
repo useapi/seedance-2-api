@@ -1,6 +1,6 @@
 # Seedance 2.0 API — four ways to run it, priced honestly (useapi.net)
 
-Runnable examples and an honest price dataset for **ByteDance's Seedance 2.0** video model, run through [useapi.net](https://useapi.net). One useapi.net token drives Seedance 2.0 on **four** platforms — [PixVerse](https://useapi.net/docs/api-pixverse-v2), [Runway](https://useapi.net/docs/api-runwayml-v1), [Dreamina](https://useapi.net/docs/api-dreamina-v1), and [MiniMax](https://useapi.net/docs/api-minimax-v1) — each with a different strength.
+Runnable examples and an honest price dataset for **ByteDance's Seedance 2.0** video model, run through [useapi.net](https://useapi.net/?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api). One useapi.net token drives Seedance 2.0 on **four** platforms — [PixVerse](https://useapi.net/docs/api-pixverse-v2), [Runway](https://useapi.net/docs/api-runwayml-v1), [Dreamina](https://useapi.net/docs/api-dreamina-v1), and [MiniMax](https://useapi.net/docs/api-minimax-v1) — each with a different strength.
 
 📖 Full write-up with the pricing math and sources: **[Seedance 2.0 API Pricing: The Cheapest Ways to Run It, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing)**
 
@@ -23,7 +23,7 @@ Run `node pricing/price.mjs 1080p 5` to reproduce this, or any resolution/durati
 
 ## Quick start
 
-You need [Node.js](https://nodejs.org) v21 or newer (no dependencies to install) and a useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi). The calculator needs nothing else:
+You need [Node.js](https://nodejs.org) v21 or newer (no dependencies to install) and a useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api). The calculator needs nothing else:
 
 ```bash
 git clone https://github.com/useapi/seedance-2-api.git
@@ -31,7 +31,7 @@ cd seedance-2-api
 node pricing/price.mjs 1080p 5        # cost calculator — no account needed
 ```
 
-To generate real clips across all four routes, connect [PixVerse](https://useapi.net/docs/start-here/setup-pixverse), [Runway](https://useapi.net/docs/start-here/setup-runwayml), [Dreamina](https://useapi.net/docs/start-here/setup-dreamina), and [MiniMax](https://useapi.net/docs/start-here/setup-minimax) accounts (one [$15/month subscription](https://useapi.net/docs/subscription) covers every useapi.net service):
+To generate real clips across all four routes, connect [PixVerse](https://useapi.net/docs/start-here/setup-pixverse), [Runway](https://useapi.net/docs/start-here/setup-runwayml), [Dreamina](https://useapi.net/docs/start-here/setup-dreamina), and [MiniMax](https://useapi.net/docs/start-here/setup-minimax) accounts (one [$15/month subscription](https://useapi.net/docs/subscription?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api) covers every useapi.net service):
 
 ```bash
 cd compare
@@ -42,7 +42,7 @@ Edit `compare/prompts.json` to change the prompt. Results land in `compare/outpu
 
 ## About useapi.net
 
-[useapi.net](https://useapi.net) is an experimental REST API for AI services. These routes drive your own [PixVerse](https://pixverse.ai), [Runway](https://runwayml.com), [Dreamina](https://dreamina.capcut.com), and [MiniMax](https://hailuoai.video) accounts, so you spend those platforms' consumer credits instead of metered developer-API pricing — which is why Seedance runs cheaper here. See the [model matrix](https://useapi.net/model-matrix) and the [pricing article](https://useapi.net/docs/articles/seedance-2-api-pricing).
+[useapi.net](https://useapi.net/?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api) is an experimental REST API for AI services. These routes drive your own [PixVerse](https://pixverse.ai), [Runway](https://runwayml.com), [Dreamina](https://dreamina.capcut.com), and [MiniMax](https://hailuoai.video) accounts, so you spend those platforms' consumer credits instead of metered developer-API pricing — which is why Seedance runs cheaper here. See the [model matrix](https://useapi.net/model-matrix?utm_source=github&utm_medium=readme&utm_campaign=seedance-2-api) and the [pricing article](https://useapi.net/docs/articles/seedance-2-api-pricing).
 
 Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for support. Guides and demos on the [YouTube Channel](https://www.youtube.com/@midjourneyapi).
 
