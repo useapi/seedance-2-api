@@ -44,6 +44,6 @@ Edit `compare/prompts.json` to change the prompt. Results land in `compare/outpu
 
 [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) is an experimental REST API for AI services. These routes drive your own [PixVerse](https://pixverse.ai), [Runway](https://runwayml.com), [Dreamina](https://dreamina.capcut.com), and [MiniMax](https://hailuoai.video) accounts, so you spend those platforms' consumer credits instead of metered developer-API pricing — which is why Seedance runs cheaper here. See the [model matrix](https://useapi.net/model-matrix?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) and the [pricing article](https://useapi.net/docs/articles/seedance-2-api-pricing).
 
-Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for support. Guides and demos on the [YouTube Channel](https://www.youtube.com/@midjourneyapi).
+Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for support. Guides and demos on the [YouTube Channel](https://www.youtube.com/@useapi-net).
 
 *Prices in this repo were verified 2026-07-21 and shift weekly — re-check the source before relying on any figure.*
