@@ -47,3 +47,6 @@ Edit `compare/prompts.json` to change the prompt. Results land in `compare/outpu
 Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for support. Guides and demos on the [YouTube Channel](https://www.youtube.com/@useapi-net).
 
 *Prices in this repo were verified 2026-07-21 and shift weekly — re-check the source before relying on any figure.*
+## License
+
+The example code in this repository is released under the [MIT License](./LICENSE). It covers the example scripts only, not the useapi.net service or API.
