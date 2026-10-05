@@ -1,8 +1,8 @@
 # Same prompt, four Seedance 2.0 routes
 
-📖 Full write-up: [Seedance 2.0 API Pricing: The Cheapest Ways to Run It, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing)
+📖 Full write-up: [Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api)
 
-`compare.mjs` sends one text-to-video prompt to all four Seedance 2.0 routes in parallel — PixVerse, Runway, Dreamina, and MiniMax — polls each until the clip is ready, downloads it, and prints the generation time plus the per-clip cost from [`../pricing/pricing.json`](../pricing/pricing.json).
+`compare.mjs` sends one text-to-video prompt to all four Seedance 2.0 routes in parallel — PixVerse, Runway, Dreamina, and MiniMax — polls each until the clip is ready, downloads it, and prints the generation time plus the per-clip cost from [`../pricing/pricing.json`](../pricing/pricing.json) (each route's monthly plan; Dreamina's yearly plan).
 
 ```bash
 node compare.mjs <API_TOKEN> 720p 5
@@ -21,6 +21,6 @@ Each route speaks a slightly different dialect of the same idea, handled for you
 
 Notes worth knowing before you run it:
 
-- **1080p is region- or plan-limited on two routes.** Dreamina serves 1080p and 4K on Canada accounts only, and Runway's 1080p is metered (its unlimited Explore mode caps at 720p and is a legacy perk Runway no longer enables on new accounts). Use `720p` for a clean four-route comparison.
-- **Dreamina rejects real human faces** on Seedance 2.0 by moderation; PixVerse, MiniMax, and Runway are friendlier to real people (see the article).
+- **1080p is region- or plan-limited on two routes.** Dreamina serves 1080p and 4K on Canada accounts only, and Runway bills 1080p in credits (40 credits/s; its free Explore mode caps at 720p and is a legacy perk Runway no longer enables on new accounts). Use `720p` for a clean four-route comparison.
+- **Dreamina rejects real human faces** on Seedance 2.0 by moderation; PixVerse, MiniMax, and Runway are friendlier to real people (Dreamina does accept them on Seedance 2.5; see the article).
 - Multi-account setups can pin an account per service with the `PIXVERSE_EMAIL`, `RUNWAY_EMAIL`, `DREAMINA_ACCOUNT`, and `MINIMAX_ACCOUNT` environment variables. With one account per service, none are needed.
