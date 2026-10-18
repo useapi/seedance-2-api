@@ -1,6 +1,6 @@
 # Same prompt, four Seedance 2.0 routes
 
-📖 Full write-up: [Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api)
+Full write-up: [Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api)
 
 `compare.mjs` sends one text-to-video prompt to all four Seedance 2.0 routes in parallel — PixVerse, Runway, Dreamina, and MiniMax — polls each until the clip is ready, downloads it, and prints the generation time plus the per-clip cost from [`../pricing/pricing.json`](../pricing/pricing.json) (each route's monthly plan; Dreamina's yearly plan).
 

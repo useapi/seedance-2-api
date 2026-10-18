@@ -9,7 +9,7 @@
 // Optional env for multi-account setups (omit if you have one account per service):
 //   PIXVERSE_EMAIL  RUNWAY_EMAIL  DREAMINA_ACCOUNT  MINIMAX_ACCOUNT
 //
-// 📖 Full pricing write-up: https://useapi.net/docs/articles/seedance-2-api-pricing
+// Full pricing write-up: https://useapi.net/docs/articles/seedance-2-api-pricing
 
 import { readFileSync, mkdirSync, createWriteStream } from 'node:fs';
 import { pipeline } from 'node:stream/promises';

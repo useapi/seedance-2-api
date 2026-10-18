@@ -1,6 +1,6 @@
 # Seedance 2.0 and 2.5 pricing — dataset + calculator
 
-📖 Full write-up: [Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api)
+Full write-up: [Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api)
 
 An honest, sourced price dataset for Seedance 2.0 and Seedance 2.5 across the four useapi.net routes, ByteDance's official API, and the third-party field — plus a CLI that computes the cost of any clip on a monthly and a yearly plan.
 

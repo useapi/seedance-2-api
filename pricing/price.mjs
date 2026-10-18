@@ -6,7 +6,7 @@
 //     resolution: 480p | 720p | 1080p (default) | 4k | 2160p     duration: seconds, default 5
 //     --model   : 2.0 (default) or 2.5 — Seedance 2.5 tops out at 1080p
 //
-// 📖 Full write-up: https://useapi.net/docs/articles/seedance-2-api-pricing
+// Full write-up: https://useapi.net/docs/articles/seedance-2-api-pricing
 
 import { readFileSync } from 'node:fs';
 import path from 'node:path';

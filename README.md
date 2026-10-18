@@ -2,7 +2,7 @@
 
 Runnable examples and an honest price dataset for **ByteDance's Seedance 2.0 and Seedance 2.5** video models, run through [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api). One useapi.net token drives Seedance on **four** platforms — [PixVerse](https://useapi.net/docs/api-pixverse-v2?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api), [Runway](https://useapi.net/docs/api-runwayml-v1?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api), [Dreamina](https://useapi.net/docs/api-dreamina-v1?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api), and [MiniMax](https://useapi.net/docs/api-minimax-v1?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) — each with a different strength.
 
-📖 Full write-up with the pricing math and sources: **[Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api)**
+Full write-up with the pricing math and sources: **[Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api)**
 
 ## The short version — Seedance 2.0 (5-second 1080p clip, verified October 5, 2026)
 
@@ -19,16 +19,19 @@ Runnable examples and an honest price dataset for **ByteDance's Seedance 2.0 and
 
 In July the PixVerse route was $1.20 a clip. PixVerse has since repriced Seedance and ended its Pro/Premium discount, so it is now $1.80 on a monthly plan and $1.44 billed yearly. Yearly prices assume you use the plan's credits, and useapi.net's flat $15/month comes on top.
 
-## Seedance 2.5 (5-second clip)
+## Seedance 2.5 — real faces and clips past 30 seconds
 
-| Route / provider | 480p | 720p | 1080p |
-|---|---:|---:|---:|
-| Official ByteDance | $0.51 | $1.16 | **$2.84** |
-| useapi.net · PixVerse (Premium monthly / yearly) | $0.70 / $0.56 | $1.50 / $1.20 | $3.40 / **$2.72** |
-| useapi.net · Dreamina (CA / US, yearly) | $0.64 / $0.69 | $1.40 / $1.50 | $3.41 *(CA only)* |
-| useapi.net · Runway (Max monthly / yearly) | $1.00 / $0.80 | $1.50 / $1.20 | — |
+Through useapi.net you can run Seedance 2.5 on real people and on long clips, which ByteDance's official API restricts. Its own [Seedance 2.5 guide](https://docs.byteplus.com/en/docs/modelark/seedance-2-5) says: "Seedance 2.5 does not support directly uploading reference images or videos containing real human faces". It also stops at 30 seconds a clip. Our [Dreamina route](https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) takes a real photo as a reference or first frame, and its long video mode runs 31 to 180 seconds in one job. The [Runway route](https://useapi.net/docs/api-runwayml-v1/post-runwayml-videos-create?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) also accepts real faces on Seedance.
 
-On Seedance 2.5 the official API is the cheapest choice except PixVerse Premium billed yearly at 1080p. Our routes are there for real human faces (Dreamina and Runway; the official API rejects them), clips past 30 seconds (Dreamina long video mode, up to 180s), and no $32 prepaid pack. MiniMax does not carry 2.5.
+At 1080p, a 5-second Seedance 2.5 clip costs less on our PixVerse and Runway routes than on the official API (October 2026):
+
+| Route / provider | 1080p, 5 s |
+|---|---:|
+| **useapi.net · PixVerse** (Premium, billed yearly) | **$2.72** + $15/month useapi.net |
+| **useapi.net · Runway** (Max, billed yearly) | **$2.72** + $15/month useapi.net |
+| Official ByteDance | $2.84 |
+
+Yearly prices assume you use the plan's credits.
 
 Run `node pricing/price.mjs 1080p 5` (or add `--model 2.5`) to reproduce these numbers at any resolution and duration.
 
@@ -59,7 +62,7 @@ Edit `compare/prompts.json` to change the prompt. Results land in `compare/outpu
 
 ## About useapi.net
 
-[useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) is an experimental REST API for AI services. These routes drive your own [PixVerse](https://pixverse.ai), [Runway](https://runwayml.com), [Dreamina](https://dreamina.capcut.com), and [MiniMax](https://hailuoai.video) accounts, so you spend those platforms' consumer credits instead of metered developer-API pricing. On Seedance 2.0 that lands below the official rate; on Seedance 2.5 it mostly does not, and the case is real faces, longer clips, and no prepaid pack. See the [model matrix](https://useapi.net/model-matrix?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) and the [pricing article](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api).
+[useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) is an experimental REST API for AI services. These routes drive your own [PixVerse](https://pixverse.ai), [Runway](https://runwayml.com), [Dreamina](https://dreamina.capcut.com), and [MiniMax](https://hailuoai.video) accounts, so you spend those platforms' consumer credits instead of metered developer-API pricing. On Seedance 2.0 that lands below the official rate. On Seedance 2.5 our routes take real human faces and clips up to 180 seconds, and PixVerse billed yearly is cheaper at 1080p. See the [model matrix](https://useapi.net/model-matrix?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api) and the [pricing article](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=seedance-2-api).
 
 Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for support. Guides and demos on the [YouTube Channel](https://www.youtube.com/@useapi-net).
 
