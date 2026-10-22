@@ -24,7 +24,7 @@ const DUR = Number(process.argv[4] || 5);
 const here = path.dirname(fileURLToPath(import.meta.url));
 const prompt = JSON.parse(readFileSync(path.join(here, 'prompts.json'), 'utf8')).prompt;
 const pricingJson = JSON.parse(readFileSync(path.join(here, '..', 'pricing', 'pricing.json'), 'utf8'));
-const pricing = pricingJson.useapi_routes;   // Seedance 2.0 routes; usd_per_second = monthly plan (Dreamina: yearly)
+const pricing = pricingJson.useapi_routes;   // Seedance 2.0 routes; usd_per_second = monthly plan
 const outDir = path.join(here, 'output');
 mkdirSync(outDir, { recursive: true });
 
@@ -131,4 +131,4 @@ results.forEach((r, i) => {
   if (r.status === 'fulfilled') console.log(`  ${r.value.route.padEnd(9)} ${r.value.cost.padStart(16)}   ${r.value.seconds}s`);
   else console.log(`  ${routes[i].name.padEnd(9)} FAILED: ${String(r.reason).slice(0, 80)}`);
 });
-console.log(`\nCosts from ../pricing/pricing.json (verified ${pricingJson.verified}; monthly plan, Dreamina yearly). Re-check before relying.`);
+console.log(`\nCosts from ../pricing/pricing.json (verified ${pricingJson.verified}; monthly plan). Re-check before relying.`);

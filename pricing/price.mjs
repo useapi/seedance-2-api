@@ -60,7 +60,7 @@ console.log('  Route / provider              Monthly    Yearly   Plan');
 console.log('  ' + '─'.repeat(78));
 for (const r of rows) console.log(`  ${r.who.padEnd(27)} ${fmt(r.monthly)} ${fmt(r.yearly)}   ${r.note}`);
 console.log('\n  "—" = not offered at this resolution, or no figure for that billing period.');
-console.log('  useapi.net adds a flat $15/mo across every service on top of the account plan.');
+console.log('  Route prices are the subscription cost of the credits a clip uses; yearly assumes you use the plan\'s credits.');
 
 if (RES === '1080p' && DUR === 5) {
   console.log(`\n  Third-party field — Seedance ${MODEL}, 5s 1080p (verified ${p.verified}):`);
