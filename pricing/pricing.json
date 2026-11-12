@@ -1,7 +1,7 @@
 {
-  "_about": "Seedance 2.0 and 2.5 API pricing dataset. Verified 2026-10-05, Dreamina figures re-read 2026-10-21. Unit: USD per SECOND of output video, text-to-video, no video input, unless noted. Top-level official / useapi_routes / third_party_1080p_5s are Seedance 2.0 (schema unchanged since July); Seedance 2.5 lives in seedance_2_5. Prices shift monthly — re-check the source before relying. Full write-up: https://useapi.net/docs/articles/seedance-2-api-pricing",
-  "verified": "2026-10-05",
-  "previous_verified": "2026-07-21",
+  "_about": "Seedance 2.0 and 2.5 API pricing dataset. Verified 2026-11-12 (every route, the official API and every reseller re-read from live pages). Unit: USD per SECOND of output video, text-to-video, no video input, unless noted. Top-level official / useapi_routes / third_party_1080p_5s are Seedance 2.0 (schema unchanged since July); Seedance 2.5 lives in seedance_2_5. Prices shift monthly — re-check the source before relying. Full write-up: https://useapi.net/docs/articles/seedance-2-api-pricing",
+  "verified": "2026-11-12",
+  "previous_verified": "2026-10-05",
   "official": {
     "provider": "ByteDance (BytePlus ModelArk)",
     "billing": "per million tokens; tokens = width*height*24fps*seconds/1024",
@@ -26,21 +26,21 @@
       "usd_per_second": { "480p": 0.080, "720p": 0.180, "1080p": 0.360, "2160p": 0.800 },
       "usd_per_second_yearly": { "480p": 0.064, "720p": 0.144, "1080p": 0.288, "2160p": 0.640 },
       "real_faces": true,
-      "notes": "Cheapest verified 1080p on a yearly plan ($1.44 / 5s) and the cheapest 4K ($3.20 / 5s yearly). PixVerse repriced the Seedance family and ended the Pro/Premium discount after July (was 60 credits/s at 1080p = $1.20 / 5s). Premium still beats Ultra: Ultra's 40% third-party discount is outweighed by its worse $/credit ($2.15 / 5s at 1080p)."
+      "notes": "Cheapest verified 1080p on a yearly plan ($1.44 / 5s) and the cheapest 4K ($3.20 / 5s yearly). PixVerse repriced the Seedance family and ended the Pro/Premium discount after July (was 60 credits/s at 1080p = $1.20 / 5s). Premium still beats Ultra: Ultra's 40% third-party discount is outweighed by its worse $/credit ($2.15 / 5s at 1080p), and $1.61 on Ultra billed yearly ($1,788 / 25,000 credits a month) against $1.44 on Premium yearly."
     },
     "dreamina": {
       "docs": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos",
       "pricing_docs": "https://useapi.net/docs/start-here/setup-dreamina#cost-calculator",
-      "plan": "Dreamina CA Advanced C$109.99/mo (11,997 credits, ~$0.00652/credit at CAD/USD 0.7112)",
-      "plan_yearly": "Dreamina CA Advanced billed yearly C$1,299.99/yr (11,997 credits/mo, ~$0.00642/credit)",
+      "plan": "Dreamina CA Advanced C$109.99/mo (11,997 credits, ~$0.00644/credit at CAD/USD 0.7023)",
+      "plan_yearly": "Dreamina CA Advanced billed yearly C$1,299.99/yr (11,997 credits/mo, ~$0.00634/credit)",
       "plan_us": "Dreamina US Advanced billed yearly $900/yr = $75/mo (8,645 credits/mo, $0.00868/credit; $79 billed monthly)",
       "credits_per_second": { "720p": 23, "1080p": 57, "4k": 126 },
-      "credits_per_second_us": { "720p": 17 },
-      "usd_per_second": { "720p": 0.150, "1080p": 0.372, "4k": 0.822 },
-      "usd_per_second_yearly": { "720p": 0.1477, "1080p": 0.3661, "4k": 0.8092 },
-      "usd_per_second_us_yearly": { "720p": 0.147 },
+      "credits_per_second_us": { "720p": 17, "1080p": 41, "4k": 98 },
+      "usd_per_second": { "720p": 0.1481, "1080p": 0.367, "4k": 0.8112 },
+      "usd_per_second_yearly": { "720p": 0.1459, "1080p": 0.3615, "4k": 0.799 },
+      "usd_per_second_us_yearly": { "720p": 0.1475, "1080p": 0.3557, "4k": 0.8502 },
       "real_faces": false,
-      "notes": "Plan prices and credit rates read 2026-10-21 (Dreamina pricing page and price metadata, US and CA), CAD converted at 0.7112. 1080p and 4K are Canada-region accounts only. 1080p is about $1.86 / 5s monthly and $1.83 yearly, just under the official $1.87; 4K ($4.11 monthly, $4.05 yearly) costs more than the official $3.89. The 2.0 family rejects real human faces (Seedance 2.5 accepts them). Widest model range, the only route with the Seedance 1.x family."
+      "notes": "Plan prices and credit rates re-read 2026-11-12 (Dreamina price list and price metadata, US and CA, unchanged since 2026-10-21), CAD converted at 0.7023. US accounts run 1080p and 4K too since 2026-10-23. 1080p is about $1.78 / 5s on US Advanced billed yearly, $1.81 on Canada yearly and $1.83 on Canada monthly ($1.87 on US monthly), against the official $1.87; 4K (from $3.99 / 5s on Canada yearly) costs more than the official $3.89. The 2.0 family rejects real human faces (Seedance 2.5 accepts them). Widest model range, the only route with the Seedance 1.x family."
     },
     "minimax": {
       "docs": "https://useapi.net/docs/api-minimax-v1/post-minimax-videos-create",
@@ -48,13 +48,13 @@
       "plan": "MiniMax Max $216/mo (27,000 credits, $0.008/credit)",
       "plan_master": "MiniMax Master $89/mo (10,500 credits, ~$0.00848/credit)",
       "plan_yearly": "MiniMax Master billed yearly (~$0.00679/credit, back-derived from the article's $1.70 / $3.39 per 5s)",
-      "usd_per_credit": { "max_monthly": 0.008, "master_monthly": 0.0084762, "master_yearly": 0.006785 },
+      "usd_per_credit": { "max_monthly": 0.008, "master_monthly": 0.0084762, "master_yearly": 0.006781 },
       "credits_per_second": { "480p": 10, "720p": 21, "1080p": 50, "4k": 100 },
       "usd_per_second": { "480p": 0.080, "720p": 0.168, "1080p": 0.400, "4k": 0.800 },
       "usd_per_second_master_monthly": { "480p": 0.0848, "720p": 0.178, "1080p": 0.4238, "4k": 0.8476 },
-      "usd_per_second_yearly": { "480p": 0.06785, "720p": 0.142485, "1080p": 0.33925, "4k": 0.6785 },
+      "usd_per_second_yearly": { "480p": 0.06781, "720p": 0.142401, "1080p": 0.33905, "4k": 0.6781 },
       "real_faces": "image references only",
-      "notes": "4K plus a deep reference-image workflow. Seedance is billed at half credits on paid plans (already reflected; 50 credits/s at 1080p, unchanged since July). MiniMax repriced its plans after July (Master was $79.99). Does not carry Seedance 2.5."
+      "notes": "4K plus a deep reference-image workflow. Seedance is billed at half credits on paid plans (already reflected; 50 credits/s at 1080p, unchanged since July). MiniMax repriced its plans after July (Master was $79.99). Does not carry Seedance 2.5. The 10/21/50/100 credits a second are MiniMax's 50% Seedance 2.0 discount, which its plan page labels a limited-time offer (still active 2026-11-12); without it 1080p would be about $3.39 to $4.24 per 5 s. The credit rates are from the useapi.net MiniMax cost calculator; Hailuo publishes none."
     },
     "runway": {
       "docs": "https://useapi.net/docs/api-runwayml-v1/post-runwayml-videos-create",
@@ -66,21 +66,21 @@
       "usd_per_second": { "480p": 0.360, "720p": 0.360, "1080p": 0.400, "720p_explore_legacy": 0.0 },
       "usd_per_second_yearly": { "480p": 0.288, "720p": 0.288, "1080p": 0.320 },
       "real_faces": true,
-      "notes": "Real faces with lighter moderation than Dreamina. 1080p = 40 credits/s ($2.00 / 5s on Max, $1.60 yearly); 480p/720p = 36 credits/s per the Runway cost calculator. Legacy exploreMode runs Seedance at 480p/720p without credits on older Unlimited accounts that already have Explore mode — Runway no longer enables it on new accounts, and it is slow (one clip at a time, ~10-15 min)."
+      "notes": "Real faces with lighter moderation than Dreamina. 1080p = 40 credits/s ($2.00 / 5s on Max, $1.60 yearly); 480p/720p = 36 credits/s per the Runway cost calculator. Legacy exploreMode runs Seedance at 480p/720p without credits on older Unlimited accounts that already have Explore mode — Runway no longer enables it on new accounts, and it is slow (one clip at a time, ~10-15 min). Runway moves legacy Unlimited (Explore mode) accounts to Max on 2026-11-30, so the free Explore figures end then."
     }
   },
   "third_party_1080p_5s": [
     { "vendor": "useapi.net (PixVerse route)", "usd_per_5s": 1.44, "usd_per_5s_high": 1.80, "verdict": "our route — consumer-account credits, Premium yearly to monthly", "source": "https://useapi.net/docs/api-pixverse-v2/post-pixverse-videos-create-v4" },
     { "vendor": "useapi.net (Runway route)", "usd_per_5s": 1.60, "usd_per_5s_high": 2.00, "verdict": "our route — Max plan, yearly to monthly", "source": "https://useapi.net/docs/api-runwayml-v1/post-runwayml-videos-create" },
-    { "vendor": "useapi.net (Dreamina route)", "usd_per_5s": 1.83, "usd_per_5s_high": 1.86, "verdict": "our route — Canada accounts, Advanced yearly to monthly, read 2026-10-21", "source": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos" },
+    { "vendor": "useapi.net (Dreamina route)", "usd_per_5s": 1.78, "usd_per_5s_high": 1.83, "verdict": "our route: US Advanced billed yearly to Canada Advanced monthly, read 2026-11-12", "source": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos" },
     { "vendor": "useapi.net (MiniMax route)", "usd_per_5s": 1.70, "usd_per_5s_high": 2.12, "verdict": "our route — Master yearly to Master monthly", "source": "https://useapi.net/docs/api-minimax-v1/post-minimax-videos-create" },
-    { "vendor": "Segmind", "usd_per_5s": 1.70, "verdict": "the only reseller below official — bills 1080p at the 720p token rate", "source": "https://www.segmind.com/models/seedance-2.0/pricing" },
+    { "vendor": "Segmind", "usd_per_5s": 1.88, "verdict": "just above official since November ($8.105 per million tokens at 1080p); no reseller is below official", "source": "https://www.segmind.com/models/seedance-2.0/pricing" },
     { "vendor": "Official BytePlus", "usd_per_5s": 1.87, "verdict": "the yardstick, matched exactly by OpenRouter's passthrough", "source": "https://docs.byteplus.com/en/docs/ModelArk/1544106" },
     { "vendor": "RunComfy", "usd_per_5s": 2.00, "verdict": "$0.40/s, down from $0.55 in July", "source": "https://www.runcomfy.com/models/bytedance/seedance-v2/pro" },
     { "vendor": "EachLabs", "usd_per_5s": 2.22, "verdict": "about $0.444/s, down from $0.60", "source": "https://www.eachlabs.ai/bytedance/seedance-2-0/bytedance-seedance-2-0-text-to-video" },
     { "vendor": "Replicate", "usd_per_5s": 2.25, "verdict": "'Official' model badge, $0.45 per output second", "source": "https://replicate.com/bytedance/seedance-2.0" },
     { "vendor": "Poyo.ai", "usd_per_5s": 2.25, "verdict": "$0.45/s", "source": "https://poyo.ai/models/seedance-2" },
-    { "vendor": "EvoLink", "usd_per_5s": 2.49, "verdict": "$0.497/s", "source": "https://evolink.ai/seedance-2-0" },
+    { "vendor": "EvoLink", "usd_per_5s": 2.48, "verdict": "$0.497/s", "source": "https://evolink.ai/seedance-2-0" },
     { "vendor": "PiAPI", "usd_per_5s": 2.50, "verdict": "self-labeled non-official service", "source": "https://piapi.ai/seedance-2-0" },
     { "vendor": "Kie.ai", "usd_per_5s": 2.55, "verdict": "added 1080p since July, prices still marked beta", "source": "https://kie.ai/seedance-2-0" },
     { "vendor": "Atlas Cloud", "usd_per_5s": 2.74, "verdict": "$2.20 with a 20% promotion; no longer a flat rate across resolutions", "source": "https://www.atlascloud.ai/models/bytedance/seedance-2.0/text-to-video" },
@@ -88,7 +88,7 @@
     { "vendor": "fal.ai", "usd_per_5s": 3.41, "verdict": "the market's default, and still the most expensive ($0.682/s, ~82% over ByteDance)", "source": "https://fal.ai/models/bytedance/seedance-2.0/text-to-video" }
   ],
   "seedance_2_5": {
-    "_about": "Seedance 2.5 (launched after the July edition). Same units and field shapes as the 2.0 blocks above. 1080p max (no 4K), up to 30s per clip, up to 50 references (30 images, 10 videos, 10 audio). MiniMax does not carry it.",
+    "_about": "Seedance 2.5 (launched after the July edition). Same units and field shapes as the 2.0 blocks above. 1080p max on the official API (no 4K there; WaveSpeedAI resells 2.5 at 4K and the useapi.net Dreamina route makes it on Canada accounts). ByteDance also sells Seedance 2.5 Flash at 480p/720p ($7.0 per million tokens), up to 30s per clip, up to 50 references (30 images, 10 videos, 10 audio). MiniMax does not carry it.",
     "official": {
       "provider": "ByteDance (BytePlus ModelArk)",
       "billing": "per million tokens; tokens = width*height*24fps*seconds/1024",
@@ -111,23 +111,23 @@
         "usd_per_second_yearly": { "480p": 0.112, "720p": 0.240, "1080p": 0.544 },
         "max_duration_seconds": 30,
         "real_faces": null,
-        "notes": "List rate. A 30% launch discount at 1080p ($2.38 / 5s monthly) is no longer in PixVerse's pricing data as of 2026-09-20; PixVerse's subscribe page now shows Seedance discounts on Ultra only. Premium yearly at 1080p ($2.72 / 5s) is under the official $2.84, as is Runway Max billed yearly."
+        "notes": "List rate. A 30% launch discount at 1080p ($2.38 / 5s monthly) is no longer in PixVerse's pricing data as of 2026-09-20; PixVerse's subscribe page shows Seedance 2.0 and 2.5 discounts on Ultra only (its Seedance 2.0 Fast and Mini discounts on Pro and Premium apply only in relax mode, which is not used for video). Premium yearly at 1080p ($2.72 / 5s) is under the official $2.84, as is Runway Max billed yearly."
       },
       "dreamina": {
         "docs": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos",
         "model": "seedance-2.5",
-        "plan": "Dreamina CA Advanced C$109.99/mo (~$0.00652/credit)",
-        "plan_yearly": "Dreamina CA Advanced billed yearly (~$0.00642/credit)",
+        "plan": "Dreamina CA Advanced C$109.99/mo (~$0.00644/credit)",
+        "plan_yearly": "Dreamina CA Advanced billed yearly (~$0.00634/credit)",
         "plan_us": "Dreamina US Advanced billed yearly $75/mo ($0.00868/credit)",
-        "credits_per_second": { "480p": 22, "720p": 48, "1080p": 117 },
-        "credits_per_second_us": { "480p": 17, "720p": 37 },
-        "usd_per_second": { "480p": 0.143, "720p": 0.313, "1080p": 0.763 },
-        "usd_per_second_yearly": { "480p": 0.1413, "720p": 0.3083, "1080p": 0.7514 },
-        "usd_per_second_us_yearly": { "480p": 0.147, "720p": 0.321 },
+        "credits_per_second": { "480p": 22, "720p": 38, "1080p": 117, "4k": 129 },
+        "credits_per_second_us": { "480p": 17, "720p": 37, "1080p": 91 },
+        "usd_per_second": { "480p": 0.1416, "720p": 0.2447, "1080p": 0.7533, "4k": 0.8306 },
+        "usd_per_second_yearly": { "480p": 0.1395, "720p": 0.241, "1080p": 0.7419, "4k": 0.818 },
+        "usd_per_second_us_yearly": { "480p": 0.1475, "720p": 0.321, "1080p": 0.7895 },
         "max_duration_seconds": 30,
         "long_video_max_seconds": 180,
         "real_faces": true,
-        "notes": "Read 2026-10-21, no video input. 1080p is Canada-only and costs more than the official rate. Accepts real faces (photographic portraits) on 2.5, and adds a long video mode (31-180s in one job) plus video edit, which the official API does not."
+        "notes": "Re-read 2026-11-12, no video input. 1080p runs on US and Canada accounts and costs more than the official rate; 4K runs on Canada accounts only, which the official API does not sell for Seedance 2.5. Accepts real faces (photographic portraits) on 2.5, and adds a long video mode (31-180s in one job) plus video edit, which the official API does not. Also on Dreamina: seedance-2.5-draft (480p drafts, then the same video at 1080p, or 4K on Canada) and seedance-2.5-flash (Canada only)."
       },
       "runway": {
         "docs": "https://useapi.net/docs/api-runwayml-v1/post-runwayml-videos-create",
@@ -139,7 +139,7 @@
         "usd_per_second_yearly": { "480p": 0.160, "720p": 0.240, "1080p": 0.544 },
         "max_duration_seconds": 30,
         "real_faces": true,
-        "notes": "1080p = 68 credits/s ($2.72 / 5s on Max billed yearly, against $2.84 official). Real faces with lighter moderation. On legacy Explore-mode accounts, runs 2.5 at 480p or 720p without credits."
+        "notes": "1080p = 68 credits/s ($2.72 / 5s on Max billed yearly, against $2.84 official). Real faces with lighter moderation. On legacy Explore-mode accounts, runs 2.5 at 480p or 720p without credits until Runway ends Explore mode on 2026-11-30."
       }
     },
     "third_party_1080p_5s": [
@@ -148,22 +148,22 @@
       { "vendor": "Official BytePlus", "usd_per_5s": 2.84, "verdict": "the yardstick", "source": "https://docs.byteplus.com/en/docs/ModelArk/1544106" },
       { "vendor": "Poyo.ai", "usd_per_5s": 2.85, "verdict": "within a few percent of official", "source": "https://poyo.ai/models/seedance-2-5" },
       { "vendor": "Segmind", "usd_per_5s": 2.94, "verdict": "within a few percent of official", "source": "https://www.segmind.com/models/seedance-2.5/pricing" },
-      { "vendor": "EachLabs", "usd_per_5s": 3.25, "verdict": "about 14% above official", "source": "https://www.eachlabs.ai/bytedance/seedance-2-5/bytedance-seedance-2-5-text-to-video" },
+      { "vendor": "EachLabs", "usd_per_5s": 3.28, "verdict": "about 15% above official", "source": "https://www.eachlabs.ai/bytedance/seedance-2-5/bytedance-seedance-2-5-text-to-video" },
       { "vendor": "EvoLink", "usd_per_5s": 3.70, "verdict": "30-60% above official", "source": "https://evolink.ai/seedance-2-5" },
-      { "vendor": "RunComfy", "usd_per_5s": 3.82, "verdict": "30-60% above official", "source": "https://www.runcomfy.com/models/bytedance/seedance-2.5/text-to-video" },
+      { "vendor": "RunComfy", "usd_per_5s": 5.71, "verdict": "about 2x official at its full price; $3.82 during a 33% promotion (2026-11-12). 1080p is on its reference-to-video page; the text-to-video page stops at 720p", "source": "https://www.runcomfy.com/models/bytedance/seedance-2.5/text-to-video" },
       { "vendor": "Kie.ai", "usd_per_5s": 3.95, "verdict": "30-60% above official", "source": "https://kie.ai/seedance-2-5" },
       { "vendor": "PiAPI", "usd_per_5s": 4.00, "verdict": "30-60% above official", "source": "https://piapi.ai/seedance-2-5" },
-      { "vendor": "WaveSpeedAI", "usd_per_5s": 4.50, "verdict": "30-60% above official", "source": "https://wavespeed.ai/models/bytedance/seedance-2.5/text-to-video" }
+      { "vendor": "WaveSpeedAI", "usd_per_5s": 4.50, "verdict": "30-60% above official", "source": "https://wavespeed.ai/models/bytedance/seedance-2.5/text-to-video" },
+      { "vendor": "fal.ai", "usd_per_5s": 5.69, "verdict": "about 2x official; 1080p added by November 2026 ($0.0234 per 1,000 tokens), 720p about $2.37", "source": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video" }
     ],
     "third_party_720p_only_5s": [
       { "vendor": "Replicate", "usd_per_5s_720p": 1.16, "usd_per_5s_480p": 0.51, "verdict": "passes the official rate through exactly; no 1080p tier" },
-      { "vendor": "OpenRouter", "usd_per_5s_720p": 1.16, "usd_per_5s_480p": 0.51, "verdict": "passes the official rate through exactly; no 1080p tier" },
-      { "vendor": "fal.ai", "usd_per_5s_720p": 2.37, "verdict": "about 2x official at 720p; no 1080p tier" }
+      { "vendor": "OpenRouter", "usd_per_5s_720p": 1.16, "usd_per_5s_480p": 0.51, "verdict": "passes the official rate through exactly; no 1080p tier" }
     ]
   },
   "watch_for": [
     "'Turbo' / 'accelerated' variants that are not the standard model — e.g. a 1080p 5s clip at $0.80 under a turbo name ByteDance does not publish, while the same site's standard Seedance 2.0 costs $3.00.",
-    "Prices quoted at 720p when you wanted 1080p — several 'cheapest Seedance' pages, and every 2.5 listing on Replicate, OpenRouter and fal, have no 1080p tier at all.",
+    "Prices quoted at 720p when you wanted 1080p — several 'cheapest Seedance' pages, and the 2.5 listings on Replicate and OpenRouter, have no 1080p tier at all.",
     "2.0 prices on a page about 2.5 — 2.5 costs about half again as much per token, so a 'Seedance' price without a version number is not comparable.",
     "Credits with no published dollar value — uncomparable by design."
   ]

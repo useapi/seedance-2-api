@@ -21,6 +21,6 @@ Each route speaks a slightly different dialect of the same idea, handled for you
 
 Notes worth knowing before you run it:
 
-- 1080p is region- or plan-limited on two routes. Dreamina serves 1080p and 4K on Canada accounts only, and Runway bills 1080p in credits (40 credits/s; its free Explore mode caps at 720p and is a legacy perk Runway no longer enables on new accounts). Use `720p` for a clean four-route comparison.
+- 1080p is region- or plan-limited on two routes. Dreamina serves 1080p and 4K on US and Canada accounts, and Runway bills 1080p in credits (40 credits/s; its free Explore mode caps at 720p and is a legacy perk Runway no longer enables on new accounts). Use `720p` for a clean four-route comparison.
 - Dreamina rejects real human faces on Seedance 2.0 by moderation; PixVerse, MiniMax, and Runway are friendlier to real people (Dreamina does accept them on Seedance 2.5; see the article).
 - Multi-account setups can pin an account per service with the `PIXVERSE_EMAIL`, `RUNWAY_EMAIL`, `DREAMINA_ACCOUNT`, and `MINIMAX_ACCOUNT` environment variables. With one account per service, none are needed.
