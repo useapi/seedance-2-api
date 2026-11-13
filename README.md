@@ -13,7 +13,7 @@ Full write-up with the pricing math and sources: [Seedance 2.0 and 2.5 API Prici
 | useapi.net · Dreamina | $1.78 yearly · $1.83 monthly | Dreamina Advanced, US billed yearly or Canada monthly |
 | useapi.net · MiniMax | $1.70 yearly · $2.00 to $2.12 monthly | Hailuo AI Master billed yearly, Max or Master monthly, 4K plus a rich reference-image workflow, at MiniMax's limited-time 50% Seedance price |
 | Official ByteDance | $1.87 | the yardstick |
-| Segmind | $1.88 | the cheapest reseller, now just above official |
+| Segmind | $1.97 | the cheapest reseller, just above official |
 | Replicate | $2.25 | official model badge |
 | fal.ai | $3.41 | the market default, and still the most expensive |
 
@@ -66,7 +66,7 @@ Edit `compare/prompts.json` to change the prompt. Results land in `compare/outpu
 
 Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for support. Guides and demos on the [YouTube Channel](https://www.youtube.com/@useapi-net).
 
-Prices in this repo were verified 2026-11-12 (first published 2026-07-21): every route, the official API and every reseller re-read from their live pages. This market moves monthly, so re-check the source before relying on any figure.
+Prices in this repo were verified 2026-11-13 (first published 2026-07-21): every route, the official API and every reseller re-read from their live pages. This market moves monthly, so re-check the source before relying on any figure.
 
 ## License
 
