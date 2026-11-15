@@ -26,7 +26,7 @@
       "usd_per_second": { "480p": 0.080, "720p": 0.180, "1080p": 0.360, "2160p": 0.800 },
       "usd_per_second_yearly": { "480p": 0.064, "720p": 0.144, "1080p": 0.288, "2160p": 0.640 },
       "real_faces": true,
-      "notes": "Cheapest verified 1080p on a yearly plan ($1.44 / 5s) and the cheapest 4K ($3.20 / 5s yearly). PixVerse repriced the Seedance family and ended the Pro/Premium discount after July (was 60 credits/s at 1080p = $1.20 / 5s). Premium still beats Ultra: Ultra's 40% third-party discount is outweighed by its worse $/credit ($2.15 / 5s at 1080p), and $1.61 on Ultra billed yearly ($1,788 / 25,000 credits a month) against $1.44 on Premium yearly."
+      "notes": "Cheapest verified 1080p on a yearly plan ($1.44 / 5s) and the cheapest 4K ($3.20 / 5s yearly). PixVerse repriced the Seedance family and ended the Pro/Premium discount after July (was 60 credits/s at 1080p = $1.20 / 5s). At the full rate Premium beats Ultra ($2.99 / 5s at 1080p on Ultra, $199 / 30,000 credits since 2026-11-15). In PixVerse's Relax Mode (relax_mode true, possibly a longer wait) Ultra takes 50% off Seedance 2.0: $1.49 / 5s at 1080p monthly and $1.12 billed yearly ($1,788 / 12 / 30,000 = $0.0049667 a credit), 4K $3.32 / $2.48 (PixVerse toc/products/list and subscribe page, re-read 2026-11-15)."
     },
     "dreamina": {
       "docs": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos",
@@ -70,7 +70,7 @@
     }
   },
   "third_party_1080p_5s": [
-    { "vendor": "useapi.net (PixVerse route)", "usd_per_5s": 1.44, "usd_per_5s_high": 1.80, "verdict": "our route — consumer-account credits, Premium yearly to monthly", "source": "https://useapi.net/docs/api-pixverse-v2/post-pixverse-videos-create-v4" },
+    { "vendor": "useapi.net (PixVerse route)", "usd_per_5s": 1.12, "usd_per_5s_high": 1.80, "verdict": "our route — consumer-account credits, Ultra yearly in Relax Mode to Premium monthly", "source": "https://useapi.net/docs/api-pixverse-v2/post-pixverse-videos-create-v4" },
     { "vendor": "useapi.net (Runway route)", "usd_per_5s": 1.60, "usd_per_5s_high": 2.00, "verdict": "our route — Max plan, yearly to monthly", "source": "https://useapi.net/docs/api-runwayml-v1/post-runwayml-videos-create" },
     { "vendor": "useapi.net (Dreamina route)", "usd_per_5s": 1.78, "usd_per_5s_high": 1.83, "verdict": "our route: US Advanced billed yearly to Canada Advanced monthly, read 2026-11-12", "source": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos" },
     { "vendor": "useapi.net (MiniMax route)", "usd_per_5s": 1.70, "usd_per_5s_high": 2.12, "verdict": "our route — Master yearly to Master monthly", "source": "https://useapi.net/docs/api-minimax-v1/post-minimax-videos-create" },
@@ -111,7 +111,7 @@
         "usd_per_second_yearly": { "480p": 0.112, "720p": 0.240, "1080p": 0.544 },
         "max_duration_seconds": 30,
         "real_faces": null,
-        "notes": "List rate. A 30% launch discount at 1080p ($2.38 / 5s monthly) is no longer in PixVerse's pricing data as of 2026-09-20; PixVerse's subscribe page shows Seedance 2.0 and 2.5 discounts on Ultra only (its Seedance 2.0 Fast and Mini discounts on Pro and Premium apply only in relax mode, which is not used for video). Premium yearly at 1080p ($2.72 / 5s) is under the official $2.84, as is Runway Max billed yearly."
+        "notes": "List rate. A 30% launch discount at 1080p ($2.38 / 5s monthly) is no longer in PixVerse's pricing data as of 2026-09-20; PixVerse's subscribe page (re-read 2026-11-15) shows Seedance 2.0 and 2.5 discounts on Ultra only, and they apply in PixVerse's Relax Mode (relax_mode true, possibly a longer wait): 45% off 2.5, 468 credits for 5 s at 1080p = $3.10 on Ultra monthly and $2.32 billed yearly. Premium yearly at 1080p ($2.72 / 5s) is under the official $2.84, as is Runway Max billed yearly."
       },
       "dreamina": {
         "docs": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos",
@@ -143,7 +143,7 @@
       }
     },
     "third_party_1080p_5s": [
-      { "vendor": "useapi.net (PixVerse route)", "usd_per_5s": 2.72, "verdict": "our route — Premium billed yearly", "source": "https://useapi.net/docs/api-pixverse-v2/post-pixverse-videos-create-v4" },
+      { "vendor": "useapi.net (PixVerse route)", "usd_per_5s": 2.32, "usd_per_5s_high": 2.72, "verdict": "our route — Ultra billed yearly in Relax Mode to Premium billed yearly", "source": "https://useapi.net/docs/api-pixverse-v2/post-pixverse-videos-create-v4" },
       { "vendor": "useapi.net (Runway route)", "usd_per_5s": 2.72, "verdict": "our route — Max billed yearly", "source": "https://useapi.net/docs/api-runwayml-v1/post-runwayml-videos-create" },
       { "vendor": "Official BytePlus", "usd_per_5s": 2.84, "verdict": "the yardstick", "source": "https://docs.byteplus.com/en/docs/ModelArk/1544106" },
       { "vendor": "Poyo.ai", "usd_per_5s": 2.85, "verdict": "within a few percent of official", "source": "https://poyo.ai/models/seedance-2-5" },
