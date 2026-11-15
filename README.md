@@ -17,7 +17,7 @@ Full write-up with the pricing math and sources: [Seedance 2.0 and 2.5 API Prici
 | Replicate | $2.25 | official model badge |
 | fal.ai | $3.41 | the market default, and still the most expensive |
 
-In July the PixVerse route was $1.20 a clip. PixVerse has since repriced Seedance and ended its Pro and Premium discount, so on Premium it is now $1.80 on a monthly plan and $1.44 billed yearly. Since November 15, 2026 PixVerse Ultra ($199 for 30,000 credits a month) takes 50% off Seedance 2.0 unless the request sends `relax_mode: false`, which pays the full price, so a clip costs $1.49, or $1.12 billed yearly. At 4K only PixVerse and MiniMax billed yearly come in under the official $3.89. Each route price is the website subscription's cost for the credits that clip uses, and yearly prices assume you use the plan's credits.
+In July the PixVerse route was $1.20 a clip. PixVerse has since repriced Seedance and ended its Pro and Premium discount, so on Premium it is now $1.80 on a monthly plan and $1.44 billed yearly. As of November 15, 2026 PixVerse Ultra ($199 for 30,000 credits a month) takes 50% off Seedance 2.0 unless the request sends `relax_mode: false`, which pays the full price, so a clip costs $1.49, or $1.12 billed yearly. At 4K only PixVerse (Ultra monthly or yearly, Premium yearly) and MiniMax billed yearly come in under the official $3.89. Each route price is the website subscription's cost for the credits that clip uses, and yearly prices assume you use the plan's credits.
 
 ## Seedance 2.5: real faces and clips past 30 seconds
 
@@ -67,7 +67,7 @@ Edit `compare/prompts.json` to change the prompt. Results land in `compare/outpu
 
 Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for support. Guides and demos on the [YouTube Channel](https://www.youtube.com/@useapi-net).
 
-Prices in this repo were verified 2026-11-13 (first published 2026-07-21): every route, the official API and every reseller re-read from their live pages. This market moves monthly, so re-check the source before relying on any figure.
+Prices in this repo were verified 2026-11-13, and the PixVerse route again on 2026-11-15 (first published 2026-07-21): every route, the official API and every reseller re-read from their live pages. This market moves monthly, so re-check the source before relying on any figure.
 
 ## License
 

@@ -25,8 +25,12 @@
       "credits_per_second": { "480p": 20, "720p": 45, "1080p": 90, "2160p": 200 },
       "usd_per_second": { "480p": 0.080, "720p": 0.180, "1080p": 0.360, "2160p": 0.800 },
       "usd_per_second_yearly": { "480p": 0.064, "720p": 0.144, "1080p": 0.288, "2160p": 0.640 },
+      "plan_ultra": "PixVerse Ultra $199/mo (30,000 credits, $0.0066333/credit, $0.0049667 billed yearly), 50% off Seedance 2.0 by default",
+      "credits_per_second_ultra": { "480p": 10, "720p": 22.5, "1080p": 45, "2160p": 100 },
+      "usd_per_second_ultra": { "480p": 0.066333, "720p": 0.14925, "1080p": 0.2985, "2160p": 0.663333 },
+      "usd_per_second_ultra_yearly": { "480p": 0.049667, "720p": 0.11175, "1080p": 0.2235, "2160p": 0.496667 },
       "real_faces": true,
-      "notes": "Cheapest verified 1080p on a yearly plan ($1.44 / 5s) and the cheapest 4K ($3.20 / 5s yearly). PixVerse repriced the Seedance family and ended the Pro/Premium discount after July (was 60 credits/s at 1080p = $1.20 / 5s). Ultra ($199 / 30,000 credits since 2026-11-15) takes 50% off Seedance 2.0 unless the request sends relax_mode false (measured live 2026-11-15 through useapi.net), which pays the full price ($2.99 / 5s at 1080p): $1.49 / 5s at 1080p monthly and $1.12 billed yearly ($1,788 / 12 / 30,000 = $0.0049667 a credit), 4K $3.32 / $2.48 (PixVerse toc/products/list and subscribe page, re-read 2026-11-15)."
+      "notes": "Premium: $1.44 / 5s at 1080p and $3.20 at 4K billed yearly. Ultra (the _ultra fields) is the cheapest verified 1080p and 4K. PixVerse repriced the Seedance family and ended the Pro/Premium discount after July (was 60 credits/s at 1080p = $1.20 / 5s). Ultra ($199 / 30,000 credits as of 2026-11-15, 25,000 until about 2026-11-09) takes 50% off Seedance 2.0 unless the request sends relax_mode false (measured live 2026-11-15 through useapi.net), which pays the full price ($2.99 / 5s at 1080p): $1.49 / 5s at 1080p monthly and $1.12 billed yearly ($1,788 / 12 / 30,000 = $0.0049667 a credit), 4K $3.32 / $2.48 (PixVerse toc/products/list and subscribe page, re-read 2026-11-15)."
     },
     "dreamina": {
       "docs": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos",
@@ -88,7 +92,7 @@
     { "vendor": "fal.ai", "usd_per_5s": 3.41, "verdict": "the market's default, and still the most expensive ($0.682/s, ~82% over ByteDance)", "source": "https://fal.ai/models/bytedance/seedance-2.0/text-to-video" }
   ],
   "seedance_2_5": {
-    "_about": "Seedance 2.5 (launched after the July edition). Same units and field shapes as the 2.0 blocks above. 1080p max on the official API (no 4K there; WaveSpeedAI resells 2.5 at 4K and the useapi.net Dreamina route makes it on Canada accounts). ByteDance also sells Seedance 2.5 Flash at 480p/720p ($7.0 per million tokens), up to 30s per clip, up to 50 references (30 images, 10 videos, 10 audio). MiniMax does not carry it.",
+    "_about": "Seedance 2.5 (launched after the July edition). Same units and field shapes as the 2.0 blocks above. 1080p max on the official API (no 4K there; WaveSpeedAI resells 2.5 at 4K, the useapi.net PixVerse route makes it at 2160p and the useapi.net Dreamina route on Canada accounts). ByteDance also sells Seedance 2.5 Flash at 480p/720p ($7.0 per million tokens), up to 30s per clip, up to 50 references (30 images, 10 videos, 10 audio). MiniMax does not carry it.",
     "official": {
       "provider": "ByteDance (BytePlus ModelArk)",
       "billing": "per million tokens; tokens = width*height*24fps*seconds/1024",
@@ -106,12 +110,16 @@
         "model": "seedance-2.5",
         "plan": "PixVerse Premium $60/mo ($0.004/credit)",
         "plan_yearly": "PixVerse Premium yearly ($0.0032/credit)",
-        "credits_per_second": { "480p": 35, "720p": 75, "1080p": 170 },
-        "usd_per_second": { "480p": 0.140, "720p": 0.300, "1080p": 0.680 },
-        "usd_per_second_yearly": { "480p": 0.112, "720p": 0.240, "1080p": 0.544 },
+        "credits_per_second": { "480p": 35, "720p": 75, "1080p": 170, "2160p": 286 },
+        "usd_per_second": { "480p": 0.140, "720p": 0.300, "1080p": 0.680, "2160p": 1.144 },
+        "usd_per_second_yearly": { "480p": 0.112, "720p": 0.240, "1080p": 0.544, "2160p": 0.9152 },
+        "plan_ultra": "PixVerse Ultra $199/mo (30,000 credits, $0.0066333/credit, $0.0049667 billed yearly), 45% off Seedance 2.5 by default",
+        "credits_per_second_ultra": { "480p": 19.25, "720p": 41.25, "1080p": 93.5, "2160p": 157.3 },
+        "usd_per_second_ultra": { "480p": 0.127692, "720p": 0.273625, "1080p": 0.620217, "2160p": 1.043423 },
+        "usd_per_second_ultra_yearly": { "480p": 0.095608, "720p": 0.204875, "1080p": 0.464383, "2160p": 0.781257 },
         "max_duration_seconds": 30,
         "real_faces": null,
-        "notes": "List rate. A 30% launch discount at 1080p ($2.38 / 5s monthly) is no longer in PixVerse's pricing data as of 2026-09-20; PixVerse's subscribe page (re-read 2026-11-15) shows Seedance 2.0 and 2.5 discounts on Ultra only, and through useapi.net they apply unless the request sends relax_mode false: 45% off 2.5, 468 credits for 5 s at 1080p = $3.10 on Ultra monthly and $2.32 billed yearly. Premium yearly at 1080p ($2.72 / 5s) is under the official $2.84, as is Runway Max billed yearly."
+        "notes": "List rate. PixVerse rounds a video up to a whole credit once (5 s at 1080p on Ultra = 468 credits). Also on PixVerse: seedance-2.5-flash (480p/720p, 21/48 credits/s, 20% off on Ultra) and seedance-2.5-draft (480p previews at 35 credits/s, 20% off on Ultra, kept 14 days), which POST videos/create-final renders at 1080p or 2160p (170/286 credits/s, billed like seedance-2.5). A 30% launch discount at 1080p ($2.38 / 5s monthly) is no longer in PixVerse's pricing data as of 2026-09-20; PixVerse's subscribe page (re-read 2026-11-15) shows Seedance 2.0 and 2.5 discounts on Ultra only, and through useapi.net they apply unless the request sends relax_mode false: 45% off 2.5, 468 credits for 5 s at 1080p = $3.10 on Ultra monthly and $2.32 billed yearly. Premium yearly at 1080p ($2.72 / 5s) is under the official $2.84, as is Runway Max billed yearly."
       },
       "dreamina": {
         "docs": "https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos",

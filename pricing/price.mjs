@@ -4,7 +4,7 @@
 //
 //   node price.mjs [resolution] [duration] [--model 2.0|2.5]
 //     resolution: 480p | 720p | 1080p (default) | 4k | 2160p     duration: seconds, default 5
-//     --model   : 2.0 (default) or 2.5 — Seedance 2.5 tops out at 1080p
+//     --model   : 2.0 (default) or 2.5 — the official API stops Seedance 2.5 at 1080p, PixVerse and Dreamina (Canada) run it at 4K
 //
 // Full write-up: https://useapi.net/docs/articles/seedance-2-api-pricing
 
@@ -45,7 +45,9 @@ for (const [k, r] of Object.entries(data.useapi_routes)) {
   const yearlyOnly = r.usd_per_second_billing === 'yearly';
   const monthly = yearlyOnly ? null : clip(perSec(r.usd_per_second));
   const yearly = clip(perSec(r.usd_per_second_yearly));
-  rows.push({ who: `useapi.net · ${k}${r.plan_us ? ' (CA)' : ''}`, monthly, yearly, note: r.plan });
+  rows.push({ who: `useapi.net · ${k}${r.plan_us ? ' (CA)' : r.plan_ultra ? ' (Premium)' : ''}`, monthly, yearly, note: r.plan });
+  if (r.usd_per_second_ultra)
+    rows.push({ who: `useapi.net · ${k} (Ultra)`, monthly: clip(perSec(r.usd_per_second_ultra)), yearly: clip(perSec(r.usd_per_second_ultra_yearly)), note: r.plan_ultra });
   if (r.usd_per_second_us_yearly) {
     const us = clip(perSec(r.usd_per_second_us_yearly));
     rows.push({ who: `useapi.net · ${k} (US)`, monthly: null, yearly: us, note: r.plan_us });
@@ -56,9 +58,9 @@ rows.push({ who: 'official · ByteDance', monthly: off, yearly: off, note: 'Byte
 
 const best = r => Math.min(r.monthly ?? 1e9, r.yearly ?? 1e9);
 rows.sort((a, b) => best(a) - best(b));
-console.log('  Route / provider              Monthly    Yearly   Plan');
-console.log('  ' + '─'.repeat(78));
-for (const r of rows) console.log(`  ${r.who.padEnd(27)} ${fmt(r.monthly)} ${fmt(r.yearly)}   ${r.note}`);
+console.log('  Route / provider                  Monthly    Yearly   Plan');
+console.log('  ' + '─'.repeat(82));
+for (const r of rows) console.log(`  ${r.who.padEnd(31)} ${fmt(r.monthly)} ${fmt(r.yearly)}   ${r.note}`);
 console.log('\n  "—" = not offered at this resolution, or no figure for that billing period.');
 console.log('  Route prices are the subscription cost of the credits a clip uses; yearly assumes you use the plan\'s credits.');
 
