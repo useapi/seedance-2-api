@@ -8,7 +8,7 @@ Full write-up with the pricing math and sources: [Seedance 2.0 and 2.5 API Prici
 
 | Route / provider | Cost | Note |
 |---|---:|---|
-| useapi.net · PixVerse | $1.12 yearly · $1.49 monthly | PixVerse Ultra in PixVerse's Relax Mode, the cheapest verified 1080p, and the cheapest 4K ($2.48 yearly). At normal speed on Premium, $1.44 yearly · $1.80 monthly |
+| useapi.net · PixVerse | $1.12 yearly · $1.49 monthly | PixVerse Ultra, the cheapest verified 1080p, and the cheapest 4K ($2.48 yearly). On Premium, $1.44 yearly · $1.80 monthly |
 | useapi.net · Runway | $1.60 yearly | Runway Max billed yearly, real faces, lighter moderation |
 | useapi.net · Dreamina | $1.78 yearly · $1.83 monthly | Dreamina Advanced, US billed yearly or Canada monthly |
 | useapi.net · MiniMax | $1.70 yearly · $2.00 to $2.12 monthly | Hailuo AI Master billed yearly, Max or Master monthly, 4K plus a rich reference-image workflow, at MiniMax's limited-time 50% Seedance price |
@@ -17,7 +17,7 @@ Full write-up with the pricing math and sources: [Seedance 2.0 and 2.5 API Prici
 | Replicate | $2.25 | official model badge |
 | fal.ai | $3.41 | the market default, and still the most expensive |
 
-In July the PixVerse route was $1.20 a clip. PixVerse has since repriced Seedance and ended its Pro and Premium discount, so on Premium it is now $1.80 on a monthly plan and $1.44 billed yearly. Since November 15, 2026 PixVerse Ultra ($199 for 30,000 credits a month) takes 50% off Seedance 2.0 in PixVerse's Relax Mode (`relax_mode: true`, possibly a longer wait in its queue), which makes it $1.49 a clip, or $1.12 billed yearly. At 4K only PixVerse and MiniMax billed yearly come in under the official $3.89. Each route price is the website subscription's cost for the credits that clip uses, and yearly prices assume you use the plan's credits.
+In July the PixVerse route was $1.20 a clip. PixVerse has since repriced Seedance and ended its Pro and Premium discount, so on Premium it is now $1.80 on a monthly plan and $1.44 billed yearly. Since November 15, 2026 PixVerse Ultra ($199 for 30,000 credits a month) takes 50% off Seedance 2.0 unless the request sends `relax_mode: false`, which pays the full price, so a clip costs $1.49, or $1.12 billed yearly. At 4K only PixVerse and MiniMax billed yearly come in under the official $3.89. Each route price is the website subscription's cost for the credits that clip uses, and yearly prices assume you use the plan's credits.
 
 ## Seedance 2.5: real faces and clips past 30 seconds
 
@@ -27,7 +27,7 @@ At 1080p, a 5-second Seedance 2.5 clip costs less on our PixVerse and Runway rou
 
 | Route / provider | 1080p, 5 s |
 |---|---:|
-| useapi.net · PixVerse (Ultra billed yearly, Relax Mode) | $2.32 |
+| useapi.net · PixVerse (Ultra billed yearly) | $2.32 |
 | useapi.net · PixVerse (Premium billed yearly) | $2.72 |
 | useapi.net · Runway (Max billed yearly) | $2.72 |
 | Official ByteDance | $2.84 |
